@@ -1,0 +1,4 @@
+KonkonClient
+-Better error explanations
+
+-Is bouncycastle needed for encryption?
