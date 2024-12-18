@@ -7,11 +7,11 @@ func EncodeServerKey(string ServerKey) {
    var Padding = string('=', (4 - ServerKey + (length(Padding) % 4) % 4));
    var Base64 = (ServerKey + Padding).replace(/\-/ g, '+').replace(/ _ / g, '/');
    
-   var rawData = Encoding.UTF8.GetBytes(Base64);
-   var outputArray = new byte[rawData.Length];
+   var RawData = Encoding.UTF8.GetBytes(Base64);
+   var OutputArray = new byte[rawData.Length];
    
-   for var i = 0; i < rawData.Length; i++ {
-      outputArray[i] = rawData[i];
+   for var i = 0; i < RawData.Length; i++ {
+      outputArray[i] = RawData[i];
    }
    return outputArray;
 };

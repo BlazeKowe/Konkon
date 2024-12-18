@@ -2,11 +2,13 @@ using System;
 
 namespace Konkon;
 
-class main(){
-   var Client;
-   Client = new WebPushClient(){
-    {"ServiceWorker", "serviceworker"}
-    {"Key", "key"}
-    {"Link", "link"}
-     }; 
+class Konkon {
+   int static main(string[] args){
+      var Client;
+      Client = new WebPushClient(){
+      {"ServiceWorker", "serviceworker"}
+      {"Key", "key"}
+      {"Link", "link"}
+     };
+}
 }
